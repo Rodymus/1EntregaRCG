@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import ItemListContainer from './components/ItemListContainer';
+import ItemListContainer from './components/items/ItemListContainer';
 import NavBar from './components/NavBar';
 import { ChakraProvider } from '@chakra-ui/react'
 
