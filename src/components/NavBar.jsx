@@ -1,19 +1,19 @@
-import React from 'react';
+
 import {
   Box,
-  Button,
-  ButtonGroup,
   Flex,
   Heading,
   Spacer,
   Select,
   Image
-} from '@chakra-ui/react';
-import CartWidget from './cart/CartWidget';
+} from '@chakra-ui/react'
+import CartWidget from './cart/CartWidget'
+
 
 const NavBar = () => {
   return (
     <>
+    
     <Flex minWidth="max-content" alignItems="center" gap="1">
       <Box>
         <Heading size="md">Tienda de Vinos</Heading>
@@ -30,9 +30,12 @@ const NavBar = () => {
 
         
     </Flex>
-    <Image boxSize='300px'
-    objectFit='cover'
-    src='https://res.cloudinary.com/da5x6tuuw/image/upload/v1684969081/una-botella-de-vino-tinto_l7snoz.jpg' />
+
+    <Box boxSize='800px'>
+      <Image src='https://res.cloudinary.com/da5x6tuuw/image/upload/v1684969081/una-botella-de-vino-tinto_l7snoz.jpg' alt='' />
+    </Box>
+
+   
     </>
   );
 };
