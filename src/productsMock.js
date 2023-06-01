@@ -2,38 +2,38 @@
 export const products = [
   {
       id: 1,
-      title: "Remera negra",
-      price: 15000,
+      title: "Vino Tinto",
+      price: 1500,
       stock: 2,
-      description: "Estas son las mejores zapatillas",
-      category: "deportivas",
+      description: "El mejor vino sanjuanino",
+      category: "tinto",
       img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
   },
   {
       id: 2,
-      title: "wilson advance",
-      price: 14500,
+      title: "Vino Blanco",
+      price: 1450,
       stock: 5,
-      description: "Ultra livianas y cuentan con camara de aire",
-      category: "deportivas",
+      description: "Mejor vino blanco",
+      category: "blanco",
       img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430010/foc364fsakkzmausrovn.jpg"
   },
   {
       id: 3,
-      title: "Puma",
-      price: 19000,
+      title: "Vino Rosado",
+      price: 1900,
       stock: 5,
-      description: "Las clasicas zapatillas que van para cualquier momento del dia",
-      category: "urbanas",
+      description: "Vino para la gente sofisticada",
+      category: "rosado",
       img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430165/images_lujpmr.jpg"
   },
   {
       id: 4,
-      title: "Jaguar",
-      price: 17800,
+      title: "Vino Patero",
+      price: 1780,
       stock: 5,
-      description: "Zapatillas de ultima generacion para el deporte",
-      category: "urbanas",
+      description: "Vino para hombres de campo",
+      category: "tinto",
       img: "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669430220/rtokwmt3j03bblbfhwhb.jpg"
   }
 ]
