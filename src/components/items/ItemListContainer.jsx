@@ -1,15 +1,16 @@
 import ItemList from "./ItemList";
 import { useEffect, useState} from "react"
+import { products } from "../../productsMock"
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
   
   const [items, setItems] = useState([]);
-
+  
   useEffect(() => {
     const tarea = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(products);
-      }, 1000);
+      }, 2000);
       // reject( "la promesa salio mal ")
     });
 
@@ -23,11 +24,9 @@ const ItemListContainer = ({greeting}) => {
   }, []);
   
   
-  return (
-  <ItemList items={items}/>
-  //  <div>{greeting}</div>;
-  )
-  
+  return 
+  <ItemList items={items} />;
+    
 };
 
 export default ItemListContainer ;
