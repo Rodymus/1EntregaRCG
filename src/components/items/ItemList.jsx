@@ -1,3 +1,5 @@
+import { Image, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+
 const ItemList = ({ items }) => {
   return (
     <div>
@@ -5,7 +7,8 @@ const ItemList = ({ items }) => {
         return (
           <div key={elemento.id}>
             <h3>{elemento.title}</h3>
-            <img src={elemento.img} />
+            <Image boxSize='300px'
+            src={elemento.img} />
             <h4>{elemento.price}</h4>
           </div>
         );
