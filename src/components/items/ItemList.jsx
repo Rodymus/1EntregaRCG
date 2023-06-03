@@ -1,14 +1,15 @@
-
 const ItemList = ({ items }) => {
-  console.log(items)
-
   return (
     <div>
-      <div>
-        <h2>{items[0].title}</h2>
-        <img src={items[0].img} />
-        <h3>{items[0].price}</h3>
-      </div>
+      {items.map((elemento) => {
+        return (
+          <div key={elemento.id}>
+            <h3>{elemento.title}</h3>
+            <img src={elemento.img} />
+            <h4>{elemento.price}</h4>
+          </div>
+        );
+      })}
     </div>
   );
 };
