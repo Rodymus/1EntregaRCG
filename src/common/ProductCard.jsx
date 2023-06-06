@@ -1,15 +1,21 @@
-import { Image, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import { Image, Card, CardHeader, CardBody, CardFooter, Stack, Text, Heading, Divider, Button, ButtonGroup } from '@chakra-ui/react'
 
-import React from 'react'
 
 const ProductCard = ({elemento}) => {
   return (
-    <div>
-      <h3>{elemento.title}</h3>
-      <Image boxSize='300px'
-      src={elemento.img} />
-      <h4>$ {elemento.price}</h4>
-    </div>
+    <Card>
+      <Stack mt='6' spacing='3'>
+        <Heading size='md'>{elemento.title}</Heading>
+      <Image boxSize='300px' src={elemento.img} />
+        <Text color='blue.600' fontSize='2xl'>$ {elemento.price}</Text>
+      </Stack>
+      <Divider />
+      <CardFooter>
+        <Button variant='solid' colorScheme='blue'>
+          Agregar al carrito
+        </Button>        
+      </CardFooter>
+        </Card>
   )
 }
 

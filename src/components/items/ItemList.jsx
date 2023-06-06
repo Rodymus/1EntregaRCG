@@ -1,5 +1,6 @@
 
 import ProductCard from '../../common/ProductCard';
+import "./ItemList.css"
 
 const ItemList = ({ items }) => {
   return (
