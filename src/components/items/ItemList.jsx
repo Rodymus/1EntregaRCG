@@ -1,16 +1,12 @@
-import { Image, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+
+import ProductCard from '../../common/ProductCard';
 
 const ItemList = ({ items }) => {
   return (
     <div>
       {items.map((elemento) => {
         return (
-          <div key={elemento.id}>
-            <h3>{elemento.title}</h3>
-            <Image boxSize='300px'
-            src={elemento.img} />
-            <h4>{elemento.price}</h4>
-          </div>
+          <ProductCard key={elemento.id} elemento={elemento} />
         );
       })}
     </div>

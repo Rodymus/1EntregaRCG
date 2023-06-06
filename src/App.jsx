@@ -9,7 +9,7 @@ const App = () => {
   return (
   <>
   <ChakraProvider> 
-    <NavBar />
+   {/* <NavBar />*/}
     <ItemListContainer greeting={"Bienvenidos a la tienda de Vinos!!!"} />
   </ChakraProvider>
   </>
