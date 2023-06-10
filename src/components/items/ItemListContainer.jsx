@@ -1,5 +1,6 @@
 import ItemList from "./ItemList";
 import { useEffect, useState} from "react"
+import { products } from "../../productsMock";
 
 const ItemListContainer = ({greeting}) => {
   
