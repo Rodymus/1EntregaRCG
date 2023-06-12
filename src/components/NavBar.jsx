@@ -31,9 +31,9 @@ const NavBar = () => {
         
     </Flex>
 
-    <Box boxSize='800px'>
+    {/*<Box boxSize='800px'>
       <Image src='https://res.cloudinary.com/da5x6tuuw/image/upload/v1684969081/una-botella-de-vino-tinto_l7snoz.jpg' alt='' />
-    </Box>
+  </Box>*/}
 
    
     </>
