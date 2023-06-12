@@ -1,16 +1,25 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import ItemListContainer from './components/items/ItemListContainer';
-import NavBar from './components/NavBar';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from './components/Layout';
 
 
 const App = () => {
   return (
   <>
   <ChakraProvider> 
-   <NavBar />
-    <ItemListContainer greeting={"Bienvenidos a la tienda de Vinos!!!"} />
+  <BrowserRouter>
+      <Routes>
+        <Route element= { <Layout />} >
+        <Route path="/" element={<ItemListContainer greeting={"Bienvenidos a la tienda de Vinos!!!"} />} />
+        </Route>
+    
+      
+      </Routes>
+    </BrowserRouter>
+      
   </ChakraProvider>
   </>
   );
