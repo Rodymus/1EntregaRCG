@@ -7,11 +7,11 @@ const ItemListContainer = () => {
   const [items, setItems] = useState([]);
   
   useEffect(() => {
-    const tarea = new Promise((resolve, reject) => {
+    const tarea = new Promise((resolve) => {
       setTimeout(() => {
         resolve(products);
       }, 2000);
-      // reject( "la promesa salio mal ")
+      
     });
 
     tarea

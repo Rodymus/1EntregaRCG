@@ -56,3 +56,11 @@ export const products = [
         img: "https://res.cloudinary.com/da5x6tuuw/image/upload/v1685659338/rosadoCaja_bwgywo.jpg"
     }
   ]
+
+  export const getProductById = (productId)=> {
+      return new Promise((resolve)=> {
+          setTimeout(()=>{
+              resolve(products.find(prod => prod.id === productId))
+          }, 500)
+      })
+  }

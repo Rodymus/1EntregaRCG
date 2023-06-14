@@ -15,11 +15,10 @@ const App = () => {
         <Route element= { <Layout />} >
         <Route path="/" element={<ItemListContainer greeting={"Bienvenidos a la tienda de Vinos!!!"} />} />
         </Route>
-    
-      
+              
       </Routes>
     </BrowserRouter>
-      
+     <ItemListContainer /> 
   </ChakraProvider>
   </>
   );
